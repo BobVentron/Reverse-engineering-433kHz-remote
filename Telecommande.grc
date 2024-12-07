@@ -1,0 +1,2113 @@
+options:
+  parameters:
+    author: ''
+    catch_exceptions: 'True'
+    category: '[GRC Hier Blocks]'
+    cmake_opt: ''
+    comment: ''
+    copyright: ''
+    description: ''
+    gen_cmake: 'On'
+    gen_linking: dynamic
+    generate_options: qt_gui
+    hier_block_src_path: '.:'
+    id: Telecommande
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: prompt
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: Not titled yet
+    window_size: (1000,1000)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [24, 16.0]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: A
+  id: variable_qtgui_push_button
+  parameters:
+    comment: ''
+    gui_hint: 'Tab_envoye@1 : 0,0,1,4'
+    label: A
+    pressed: '1'
+    released: '0'
+    type: int
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [232, 1048.0]
+    rotation: 0
+    state: enabled
+- name: A_et_B
+  id: variable_qtgui_push_button
+  parameters:
+    comment: ''
+    gui_hint: 'Tab_envoye@2 : 0,0,1,4'
+    label: A_et_B
+    pressed: '1'
+    released: '0'
+    type: int
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [976, 1048.0]
+    rotation: 0
+    state: enabled
+- name: A_et_B_et_C
+  id: variable_qtgui_push_button
+  parameters:
+    comment: ''
+    gui_hint: 'Tab_envoye@2 : 1,0,1,4'
+    label: A_et_B_et_C
+    pressed: '1'
+    released: '0'
+    type: int
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1160, 1048.0]
+    rotation: 0
+    state: enabled
+- name: A_et_B_et_C_et_D
+  id: variable_qtgui_push_button
+  parameters:
+    comment: ''
+    gui_hint: 'Tab_envoye@2 : 2,0,1,4'
+    label: A_et_B_et_C_et_D
+    pressed: '1'
+    released: '0'
+    type: int
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1352, 1048.0]
+    rotation: 0
+    state: enabled
+- name: B
+  id: variable_qtgui_push_button
+  parameters:
+    comment: ''
+    gui_hint: 'Tab_envoye@1 : 1,0,1,4'
+    label: B
+    pressed: '1'
+    released: '0'
+    type: int
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [424, 1048.0]
+    rotation: 0
+    state: enabled
+- name: C
+  id: variable_qtgui_push_button
+  parameters:
+    comment: ''
+    gui_hint: 'Tab_envoye@1 : 2,0,1,4'
+    label: C
+    pressed: '1'
+    released: '0'
+    type: int
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [608, 1048.0]
+    rotation: 0
+    state: enabled
+- name: Code_A
+  id: variable_qtgui_label
+  parameters:
+    comment: ''
+    formatter: None
+    gui_hint: 'Tab_envoye@0 : 2,0,1,1'
+    label: 'Show_Code_A :'
+    type: raw
+    value: '[1,1,1,0,1,0,0,0,1,0,0,0,1,0,0,0]'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [216, 1188.0]
+    rotation: 0
+    state: enabled
+- name: Code_A_et_B
+  id: variable_qtgui_label
+  parameters:
+    comment: ''
+    formatter: None
+    gui_hint: 'Tab_envoye@0 : 6,0,1,1'
+    label: 'Show_Code_A_et_B :'
+    type: raw
+    value: '[1,1,1,0,1,1,1,0,1,0,0,0,1,0,0,0]'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [960, 1188.0]
+    rotation: 0
+    state: enabled
+- name: D
+  id: variable_qtgui_push_button
+  parameters:
+    comment: ''
+    gui_hint: 'Tab_envoye@1 : 3,0,1,4'
+    label: D
+    pressed: '1'
+    released: '0'
+    type: int
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [792, 1048.0]
+    rotation: 0
+    state: enabled
+- name: Frequency
+  id: variable
+  parameters:
+    comment: ''
+    value: '433920000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [216, 20.0]
+    rotation: 0
+    state: enabled
+- name: "Pr\xE9mbule"
+  id: variable_qtgui_label
+  parameters:
+    comment: ''
+    formatter: None
+    gui_hint: 'Tab_envoye@0 : 1,0,1,1'
+    label: "Pr\xE9mbule :"
+    type: raw
+    value: '[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [24, 1056.0]
+    rotation: 0
+    state: enabled
+- name: address_telec
+  id: variable_qtgui_label
+  parameters:
+    comment: ''
+    formatter: None
+    gui_hint: 'Tab_envoye@0 : 0,0,1,1'
+    label: 'address_telec :'
+    type: raw
+    value: '[1,1,1,0,1,1,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,1,1,0,1,0,0,0,1,1,1,0,1,1,1,0,1,1,1,0,1,0,0,0,1,1,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [24, 1160.0]
+    rotation: 0
+    state: enabled
+- name: code_A_et_B_et_C
+  id: variable_qtgui_label
+  parameters:
+    comment: ''
+    formatter: None
+    gui_hint: 'Tab_envoye@0 : 7,0,1,1'
+    label: 'Show_code_A_et_B_et_C :'
+    type: raw
+    value: '[1,1,1,0,1,1,1,0,1,1,1,0,1,0,0,0]'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1144, 1188.0]
+    rotation: 0
+    state: enabled
+- name: code_A_et_B_et_C_et_D
+  id: variable_qtgui_label
+  parameters:
+    comment: ''
+    formatter: None
+    gui_hint: 'Tab_envoye@0 : 8,0,1,1'
+    label: 'Show_Code_A_et_B_et_C_et_D :'
+    type: raw
+    value: '[1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0]'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1344, 1188.0]
+    rotation: 0
+    state: enabled
+- name: code_B
+  id: variable_qtgui_label
+  parameters:
+    comment: ''
+    formatter: None
+    gui_hint: 'Tab_envoye@0 : 3,0,1,1'
+    label: 'Show_code_B :'
+    type: raw
+    value: '[1,0,0,0,1,1,1,0,1,0,0,0,1,0,0,0]'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [408, 1188.0]
+    rotation: 0
+    state: enabled
+- name: code_C
+  id: variable_qtgui_label
+  parameters:
+    comment: ''
+    formatter: None
+    gui_hint: 'Tab_envoye@0 : 4,0,1,1'
+    label: 'Show_Code_C :'
+    type: raw
+    value: '[1,0,0,0,1,0,0,0,1,1,1,0,1,0,0,0]'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [592, 1188.0]
+    rotation: 0
+    state: enabled
+- name: code_D
+  id: variable_qtgui_label
+  parameters:
+    comment: ''
+    formatter: None
+    gui_hint: 'Tab_envoye@0 : 5,0,1,1'
+    label: 'Show_Code_D :'
+    type: raw
+    value: '[1,0,0,0,1,0,0,0,1,0,0,0,1,1,1,0]'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [776, 1188.0]
+    rotation: 0
+    state: enabled
+- name: copyrightMB
+  id: variable_qtgui_label
+  parameters:
+    comment: ''
+    formatter: None
+    gui_hint: 1,0,1,1
+    label: 'copyright :'
+    type: string
+    value: 2024 Bermond Michel et Soleilhac Bastien
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [184, 316.0]
+    rotation: 0
+    state: enabled
+- name: entre_Binaire
+  id: variable_qtgui_entry
+  parameters:
+    comment: ''
+    entry_signal: editingFinished
+    gui_hint: 'Tab_envoye@3 '
+    label: 'Entrez liste :'
+    type: raw
+    value: (1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,0,0,0,1,1,1,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,1,1,1,0,1,0,0,0,1,1,1,1,0,1,0,0,0,1,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,1,1,1,0,1,0,0,0,1,1,1,0,1,0,0,0,1,0,0,0,1)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1544, 1188.0]
+    rotation: 0
+    state: enabled
+- name: envoye_bianire
+  id: variable_qtgui_push_button
+  parameters:
+    comment: ''
+    gui_hint: 'Tab_envoye@3 '
+    label: Envoye
+    pressed: '1'
+    released: '0'
+    type: int
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1552, 1048.0]
+    rotation: 0
+    state: enabled
+- name: on_off_envoye
+  id: variable_qtgui_toggle_switch
+  parameters:
+    cellalignment: '2'
+    comment: ''
+    gui_hint: Tab_general@1:0,0,1,1
+    initPressed: 'False'
+    label: OFF-ON
+    outputmsgname: value
+    position: '4'
+    pressed: '1'
+    released: '0'
+    switchOffBackground: red
+    switchOnBackground: green
+    type: int
+    value: '0'
+    verticalalignment: '2'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [376, 160.0]
+    rotation: 0
+    state: enabled
+- name: on_off_recep
+  id: variable_qtgui_toggle_switch
+  parameters:
+    cellalignment: '2'
+    comment: ''
+    gui_hint: 'Tab_general@2 : 0,0,1,1'
+    initPressed: 'False'
+    label: OFF-ON
+    outputmsgname: value
+    position: '4'
+    pressed: '1'
+    released: '0'
+    switchOffBackground: red
+    switchOnBackground: green
+    type: int
+    value: '0'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [584, 160.0]
+    rotation: 0
+    state: enabled
+- name: samp_rate_envoye
+  id: variable
+  parameters:
+    comment: ''
+    value: '1000000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [496, 20.0]
+    rotation: 0
+    state: enabled
+- name: samp_rate_recep
+  id: variable
+  parameters:
+    comment: ''
+    value: '2000000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [344, 20.0]
+    rotation: 0
+    state: enabled
+- name: Tab_aff_envoye
+  id: qtgui_tab_widget
+  parameters:
+    alias: ''
+    comment: ''
+    gui_hint: Tab_general@1 :2,0,1,1
+    label0: Affichage
+    label1: Simu_Telecomande
+    label10: Tab 10
+    label11: Tab 11
+    label12: Tab 12
+    label13: Tab 13
+    label14: Tab 14
+    label15: Tab 15
+    label16: Tab 16
+    label17: Tab 17
+    label18: Tab 18
+    label19: Tab 19
+    label2: Tab 2
+    label3: Tab 3
+    label4: Tab 4
+    label5: Tab 5
+    label6: Tab 6
+    label7: Tab 7
+    label8: Tab 8
+    label9: Tab 9
+    num_tabs: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [24, 300.0]
+    rotation: 0
+    state: enabled
+- name: Tab_aff_recep_1
+  id: qtgui_tab_widget
+  parameters:
+    alias: ''
+    comment: ''
+    gui_hint: Tab_recep@0
+    label0: Affichage
+    label1: Simu_Telecomande
+    label10: Tab 10
+    label11: Tab 11
+    label12: Tab 12
+    label13: Tab 13
+    label14: Tab 14
+    label15: Tab 15
+    label16: Tab 16
+    label17: Tab 17
+    label18: Tab 18
+    label19: Tab 19
+    label2: Tab 2
+    label3: Tab 3
+    label4: Tab 4
+    label5: Tab 5
+    label6: Tab 6
+    label7: Tab 7
+    label8: Tab 8
+    label9: Tab 9
+    num_tabs: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [376, 316.0]
+    rotation: 0
+    state: enabled
+- name: Tab_envoye
+  id: qtgui_tab_widget
+  parameters:
+    alias: ''
+    comment: ''
+    gui_hint: Tab_general@1 :1,0,1,1
+    label0: Info
+    label1: Simu_Telecomande
+    label10: Tab 10
+    label11: Tab 11
+    label12: Tab 12
+    label13: Tab 13
+    label14: Tab 14
+    label15: Tab 15
+    label16: Tab 16
+    label17: Tab 17
+    label18: Tab 18
+    label19: Tab 19
+    label2: Autre_Button
+    label3: Tab 3
+    label4: Tab 4
+    label5: Tab 5
+    label6: Tab 6
+    label7: Tab 7
+    label8: Tab 8
+    label9: Tab 9
+    num_tabs: '4'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [184, 160.0]
+    rotation: 0
+    state: enabled
+- name: Tab_general
+  id: qtgui_tab_widget
+  parameters:
+    alias: ''
+    comment: ''
+    gui_hint: 0,0,1,1
+    label0: acceuil
+    label1: envoye
+    label10: Tab 10
+    label11: Tab 11
+    label12: Tab 12
+    label13: Tab 13
+    label14: Tab 14
+    label15: Tab 15
+    label16: Tab 16
+    label17: Tab 17
+    label18: Tab 18
+    label19: Tab 19
+    label2: "r\xE9c\xE9ption"
+    label3: Tab 3
+    label4: Tab 4
+    label5: Tab 5
+    label6: Tab 6
+    label7: Tab 7
+    label8: Tab 8
+    label9: Tab 9
+    num_tabs: '3'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [24, 160.0]
+    rotation: 0
+    state: enabled
+- name: Tab_recep
+  id: qtgui_tab_widget
+  parameters:
+    alias: ''
+    comment: ''
+    gui_hint: 'Tab_general@2 '
+    label0: demod
+    label1: Simu_Telecomande
+    label10: Tab 10
+    label11: Tab 11
+    label12: Tab 12
+    label13: Tab 13
+    label14: Tab 14
+    label15: Tab 15
+    label16: Tab 16
+    label17: Tab 17
+    label18: Tab 18
+    label19: Tab 19
+    label2: Tab 2
+    label3: Tab 3
+    label4: Tab 4
+    label5: Tab 5
+    label6: Tab 6
+    label7: Tab 7
+    label8: Tab 8
+    label9: Tab 9
+    num_tabs: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [24, 404.0]
+    rotation: 0
+    state: enabled
+- name: analog_sig_source_x_0
+  id: analog_sig_source_x
+  parameters:
+    affinity: ''
+    alias: ''
+    amp: '1'
+    comment: ''
+    freq: Frequency
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    offset: '0'
+    phase: '0'
+    samp_rate: '1000000'
+    showports: 'False'
+    type: float
+    waveform: analog.GR_COS_WAVE
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1112, 1824.0]
+    rotation: 180
+    state: enabled
+- name: blocks_add_xx_0
+  id: blocks_add_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '8'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [912, 1616.0]
+    rotation: 0
+    state: enabled
+- name: blocks_complex_to_mag_squared_0
+  id: blocks_complex_to_mag_squared
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [472, 656.0]
+    rotation: 0
+    state: enabled
+- name: blocks_file_sink_0
+  id: blocks_file_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    append: 'False'
+    comment: ''
+    file: test.raw
+    type: float
+    unbuffered: 'False'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1128, 628.0]
+    rotation: 0
+    state: enabled
+- name: blocks_float_to_complex_0
+  id: blocks_float_to_complex
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [824, 2184.0]
+    rotation: 180
+    state: enabled
+- name: blocks_multiply_const_vxx_1
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: A
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [696, 1520.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_1_0
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: D
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [696, 1688.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_1_0_0
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: envoye_bianire
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [696, 1912.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_1_1
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: B
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [696, 1576.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_1_1_0
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: A_et_B_et_C
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [696, 1800.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_1_2
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: C
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [696, 1632.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_1_2_0
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: A_et_B_et_C_et_D
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [696, 1856.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_1_3
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: on_off_recep
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [296, 648.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_1_4
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: on_off_envoye
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [520, 1520.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_1_4_0
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: on_off_envoye
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [520, 1688.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_1_4_0_0
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: on_off_envoye
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [520, 1912.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_1_4_1
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: on_off_envoye
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [520, 1576.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_1_4_1_0
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: on_off_envoye
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [520, 1800.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_1_4_2
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: on_off_envoye
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [520, 1632.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_1_4_2_0
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: on_off_envoye
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [520, 1856.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_1_4_3
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: on_off_envoye
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [520, 1744.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_1_5
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: A_et_B
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [696, 1744.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_xx_0
+  id: blocks_multiply_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1032.0, 2032]
+    rotation: 270
+    state: enabled
+- name: blocks_repeat_0
+  id: blocks_repeat
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    interp: '350'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [336, 1520.0]
+    rotation: 0
+    state: enabled
+- name: blocks_repeat_0_0
+  id: blocks_repeat
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    interp: '350'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [336, 1576.0]
+    rotation: 0
+    state: enabled
+- name: blocks_repeat_0_0_0
+  id: blocks_repeat
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    interp: '350'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [336, 1800.0]
+    rotation: 0
+    state: enabled
+- name: blocks_repeat_0_1
+  id: blocks_repeat
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    interp: '350'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [336, 1632.0]
+    rotation: 0
+    state: enabled
+- name: blocks_repeat_0_1_0
+  id: blocks_repeat
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    interp: '350'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [336, 1856.0]
+    rotation: 0
+    state: enabled
+- name: blocks_repeat_0_2
+  id: blocks_repeat
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    interp: '350'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [336, 1688.0]
+    rotation: 0
+    state: enabled
+- name: blocks_repeat_0_2_0
+  id: blocks_repeat
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    interp: '350'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [336, 1912.0]
+    rotation: 0
+    state: enabled
+- name: blocks_repeat_0_3
+  id: blocks_repeat
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    interp: '350'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [336, 1744.0]
+    rotation: 0
+    state: enabled
+- name: blocks_threshold_ff_0
+  id: blocks_threshold_ff
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    high: '0.15'
+    init: '0'
+    low: '0.01'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [936, 628.0]
+    rotation: 0
+    state: enabled
+- name: blocks_vector_source_x_0
+  id: blocks_vector_source_x
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    repeat: 'True'
+    tags: '[]'
+    type: float
+    vector: entre_Binaire
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [40, 1996.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_1_0
+  id: epy_block
+  parameters:
+    _source_code: "import numpy as np\nfrom gnuradio import gr\n\nclass concat_source_block(gr.sync_block):\n\
+      \    \"\"\"Bloc pour concat\xE9ner trois listes et les utiliser comme source\
+      \ de donn\xE9es.\"\"\"\n    \n    def __init__(self, var1=None, var2=None, var3=None):\n\
+      \        gr.sync_block.__init__(self,\n            name=\"Concat Source Block\"\
+      ,\n            in_sig=None,  # Pas d'entr\xE9es\n            out_sig=[np.float32])\
+      \  # Sortie en float32\n        \n        # Initialisation des variables\n \
+      \       self.var1 = var1 if var1 is not None else []\n        self.var2 = var2\
+      \ if var2 is not None else []\n        self.var3 = var3 if var3 is not None\
+      \ else []\n        \n        # Concat\xE9nation initiale\n        self.result\
+      \ = np.array(self.var1 + self.var2 + self.var3, dtype=np.float32)\n        self.offset\
+      \ = 0  # Suivi de la position de lecture dans le r\xE9sultat\n\n    def set_var1(self,\
+      \ var1):\n        \"\"\"Met \xE0 jour var1 et recalcule le r\xE9sultat.\"\"\"\
+      \n        self.var1 = var1\n        self.result = np.array(self.var1 + self.var2\
+      \ + self.var3, dtype=np.float32)\n        self.offset = 0  # R\xE9initialiser\
+      \ l'offset\n\n    def set_var2(self, var2):\n        \"\"\"Met \xE0 jour var2\
+      \ et recalcule le r\xE9sultat.\"\"\"\n        self.var2 = var2\n        self.result\
+      \ = np.array(self.var1 + self.var2 + self.var3, dtype=np.float32)\n        self.offset\
+      \ = 0  # R\xE9initialiser l'offset\n\n    def set_var3(self, var3):\n      \
+      \  \"\"\"Met \xE0 jour var3 et recalcule le r\xE9sultat.\"\"\"\n        self.var3\
+      \ = var3\n        self.result = np.array(self.var1 + self.var2 + self.var3,\
+      \ dtype=np.float32)\n        self.offset = 0  # R\xE9initialiser l'offset\n\n\
+      \    def work(self, input_items, output_items):\n        \"\"\"Envoie les donn\xE9\
+      es concat\xE9n\xE9es comme sortie.\"\"\"\n        noutput_items = len(output_items[0])\n\
+      \n        # Calculer combien d'\xE9l\xE9ments nous pouvons copier \xE0 partir\
+      \ du r\xE9sultat\n        available_items = len(self.result) - self.offset\n\
+      \        items_to_copy = min(noutput_items, available_items)\n\n        # Copier\
+      \ les \xE9l\xE9ments dans la sortie\n        output_items[0][:items_to_copy]\
+      \ = self.result[self.offset:self.offset + items_to_copy]\n\n        # Mettre\
+      \ \xE0 jour l'offset\n        self.offset += items_to_copy\n\n        # Si on\
+      \ atteint la fin du r\xE9sultat, remettre l'offset \xE0 z\xE9ro pour r\xE9p\xE9\
+      ter\n        if self.offset >= len(self.result):\n            self.offset =\
+      \ 0  # Boucle \xE0 nouveau\n\n        return items_to_copy"
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    var1: "Pr\xE9mbule"
+    var2: address_telec
+    var3: code_D
+  states:
+    _io_cache: "('Concat Source Block', 'concat_source_block', [('var1', 'None'),\
+      \ ('var2', 'None'), ('var3', 'None')], [], [('0', 'float', 1)], 'Bloc pour concat\xE9\
+      ner trois listes et les utiliser comme source de donn\xE9es.', ['var1', 'var2',\
+      \ 'var3'])"
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [40, 1648.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_1_0_0
+  id: epy_block
+  parameters:
+    _source_code: "import numpy as np\nfrom gnuradio import gr\n\nclass concat_source_block(gr.sync_block):\n\
+      \    \"\"\"Bloc pour concat\xE9ner trois listes et les utiliser comme source\
+      \ de donn\xE9es.\"\"\"\n    \n    def __init__(self, var1=None, var2=None, var3=None):\n\
+      \        gr.sync_block.__init__(self,\n            name=\"Concat Source Block\"\
+      ,\n            in_sig=None,  # Pas d'entr\xE9es\n            out_sig=[np.float32])\
+      \  # Sortie en float32\n        \n        # Initialisation des variables\n \
+      \       self.var1 = var1 if var1 is not None else []\n        self.var2 = var2\
+      \ if var2 is not None else []\n        self.var3 = var3 if var3 is not None\
+      \ else []\n        \n        # Concat\xE9nation initiale\n        self.result\
+      \ = np.array(self.var1 + self.var2 + self.var3, dtype=np.float32)\n        self.offset\
+      \ = 0  # Suivi de la position de lecture dans le r\xE9sultat\n\n    def set_var1(self,\
+      \ var1):\n        \"\"\"Met \xE0 jour var1 et recalcule le r\xE9sultat.\"\"\"\
+      \n        self.var1 = var1\n        self.result = np.array(self.var1 + self.var2\
+      \ + self.var3, dtype=np.float32)\n        self.offset = 0  # R\xE9initialiser\
+      \ l'offset\n\n    def set_var2(self, var2):\n        \"\"\"Met \xE0 jour var2\
+      \ et recalcule le r\xE9sultat.\"\"\"\n        self.var2 = var2\n        self.result\
+      \ = np.array(self.var1 + self.var2 + self.var3, dtype=np.float32)\n        self.offset\
+      \ = 0  # R\xE9initialiser l'offset\n\n    def set_var3(self, var3):\n      \
+      \  \"\"\"Met \xE0 jour var3 et recalcule le r\xE9sultat.\"\"\"\n        self.var3\
+      \ = var3\n        self.result = np.array(self.var1 + self.var2 + self.var3,\
+      \ dtype=np.float32)\n        self.offset = 0  # R\xE9initialiser l'offset\n\n\
+      \    def work(self, input_items, output_items):\n        \"\"\"Envoie les donn\xE9\
+      es concat\xE9n\xE9es comme sortie.\"\"\"\n        noutput_items = len(output_items[0])\n\
+      \n        # Calculer combien d'\xE9l\xE9ments nous pouvons copier \xE0 partir\
+      \ du r\xE9sultat\n        available_items = len(self.result) - self.offset\n\
+      \        items_to_copy = min(noutput_items, available_items)\n\n        # Copier\
+      \ les \xE9l\xE9ments dans la sortie\n        output_items[0][:items_to_copy]\
+      \ = self.result[self.offset:self.offset + items_to_copy]\n\n        # Mettre\
+      \ \xE0 jour l'offset\n        self.offset += items_to_copy\n\n        # Si on\
+      \ atteint la fin du r\xE9sultat, remettre l'offset \xE0 z\xE9ro pour r\xE9p\xE9\
+      ter\n        if self.offset >= len(self.result):\n            self.offset =\
+      \ 0  # Boucle \xE0 nouveau\n\n        return items_to_copy"
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    var1: "Pr\xE9mbule"
+    var2: address_telec
+    var3: code_B
+  states:
+    _io_cache: "('Concat Source Block', 'concat_source_block', [('var1', 'None'),\
+      \ ('var2', 'None'), ('var3', 'None')], [], [('0', 'float', 1)], 'Bloc pour concat\xE9\
+      ner trois listes et les utiliser comme source de donn\xE9es.', ['var1', 'var2',\
+      \ 'var3'])"
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [40, 1472.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_1_0_0_0
+  id: epy_block
+  parameters:
+    _source_code: "import numpy as np\nfrom gnuradio import gr\n\nclass concat_source_block(gr.sync_block):\n\
+      \    \"\"\"Bloc pour concat\xE9ner trois listes et les utiliser comme source\
+      \ de donn\xE9es.\"\"\"\n    \n    def __init__(self, var1=None, var2=None, var3=None):\n\
+      \        gr.sync_block.__init__(self,\n            name=\"Concat Source Block\"\
+      ,\n            in_sig=None,  # Pas d'entr\xE9es\n            out_sig=[np.float32])\
+      \  # Sortie en float32\n        \n        # Initialisation des variables\n \
+      \       self.var1 = var1 if var1 is not None else []\n        self.var2 = var2\
+      \ if var2 is not None else []\n        self.var3 = var3 if var3 is not None\
+      \ else []\n        \n        # Concat\xE9nation initiale\n        self.result\
+      \ = np.array(self.var1 + self.var2 + self.var3, dtype=np.float32)\n        self.offset\
+      \ = 0  # Suivi de la position de lecture dans le r\xE9sultat\n\n    def set_var1(self,\
+      \ var1):\n        \"\"\"Met \xE0 jour var1 et recalcule le r\xE9sultat.\"\"\"\
+      \n        self.var1 = var1\n        self.result = np.array(self.var1 + self.var2\
+      \ + self.var3, dtype=np.float32)\n        self.offset = 0  # R\xE9initialiser\
+      \ l'offset\n\n    def set_var2(self, var2):\n        \"\"\"Met \xE0 jour var2\
+      \ et recalcule le r\xE9sultat.\"\"\"\n        self.var2 = var2\n        self.result\
+      \ = np.array(self.var1 + self.var2 + self.var3, dtype=np.float32)\n        self.offset\
+      \ = 0  # R\xE9initialiser l'offset\n\n    def set_var3(self, var3):\n      \
+      \  \"\"\"Met \xE0 jour var3 et recalcule le r\xE9sultat.\"\"\"\n        self.var3\
+      \ = var3\n        self.result = np.array(self.var1 + self.var2 + self.var3,\
+      \ dtype=np.float32)\n        self.offset = 0  # R\xE9initialiser l'offset\n\n\
+      \    def work(self, input_items, output_items):\n        \"\"\"Envoie les donn\xE9\
+      es concat\xE9n\xE9es comme sortie.\"\"\"\n        noutput_items = len(output_items[0])\n\
+      \n        # Calculer combien d'\xE9l\xE9ments nous pouvons copier \xE0 partir\
+      \ du r\xE9sultat\n        available_items = len(self.result) - self.offset\n\
+      \        items_to_copy = min(noutput_items, available_items)\n\n        # Copier\
+      \ les \xE9l\xE9ments dans la sortie\n        output_items[0][:items_to_copy]\
+      \ = self.result[self.offset:self.offset + items_to_copy]\n\n        # Mettre\
+      \ \xE0 jour l'offset\n        self.offset += items_to_copy\n\n        # Si on\
+      \ atteint la fin du r\xE9sultat, remettre l'offset \xE0 z\xE9ro pour r\xE9p\xE9\
+      ter\n        if self.offset >= len(self.result):\n            self.offset =\
+      \ 0  # Boucle \xE0 nouveau\n\n        return items_to_copy"
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    var1: "Pr\xE9mbule"
+    var2: address_telec
+    var3: code_A_et_B_et_C
+  states:
+    _io_cache: "('Concat Source Block', 'concat_source_block', [('var1', 'None'),\
+      \ ('var2', 'None'), ('var3', 'None')], [], [('0', 'float', 1)], 'Bloc pour concat\xE9\
+      ner trois listes et les utiliser comme source de donn\xE9es.', ['var1', 'var2',\
+      \ 'var3'])"
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [40, 1824.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_1_0_1
+  id: epy_block
+  parameters:
+    _source_code: "import numpy as np\nfrom gnuradio import gr\n\nclass concat_source_block(gr.sync_block):\n\
+      \    \"\"\"Bloc pour concat\xE9ner trois listes et les utiliser comme source\
+      \ de donn\xE9es.\"\"\"\n    \n    def __init__(self, var1=None, var2=None, var3=None):\n\
+      \        gr.sync_block.__init__(self,\n            name=\"Concat Source Block\"\
+      ,\n            in_sig=None,  # Pas d'entr\xE9es\n            out_sig=[np.float32])\
+      \  # Sortie en float32\n        \n        # Initialisation des variables\n \
+      \       self.var1 = var1 if var1 is not None else []\n        self.var2 = var2\
+      \ if var2 is not None else []\n        self.var3 = var3 if var3 is not None\
+      \ else []\n        \n        # Concat\xE9nation initiale\n        self.result\
+      \ = np.array(self.var1 + self.var2 + self.var3, dtype=np.float32)\n        self.offset\
+      \ = 0  # Suivi de la position de lecture dans le r\xE9sultat\n\n    def set_var1(self,\
+      \ var1):\n        \"\"\"Met \xE0 jour var1 et recalcule le r\xE9sultat.\"\"\"\
+      \n        self.var1 = var1\n        self.result = np.array(self.var1 + self.var2\
+      \ + self.var3, dtype=np.float32)\n        self.offset = 0  # R\xE9initialiser\
+      \ l'offset\n\n    def set_var2(self, var2):\n        \"\"\"Met \xE0 jour var2\
+      \ et recalcule le r\xE9sultat.\"\"\"\n        self.var2 = var2\n        self.result\
+      \ = np.array(self.var1 + self.var2 + self.var3, dtype=np.float32)\n        self.offset\
+      \ = 0  # R\xE9initialiser l'offset\n\n    def set_var3(self, var3):\n      \
+      \  \"\"\"Met \xE0 jour var3 et recalcule le r\xE9sultat.\"\"\"\n        self.var3\
+      \ = var3\n        self.result = np.array(self.var1 + self.var2 + self.var3,\
+      \ dtype=np.float32)\n        self.offset = 0  # R\xE9initialiser l'offset\n\n\
+      \    def work(self, input_items, output_items):\n        \"\"\"Envoie les donn\xE9\
+      es concat\xE9n\xE9es comme sortie.\"\"\"\n        noutput_items = len(output_items[0])\n\
+      \n        # Calculer combien d'\xE9l\xE9ments nous pouvons copier \xE0 partir\
+      \ du r\xE9sultat\n        available_items = len(self.result) - self.offset\n\
+      \        items_to_copy = min(noutput_items, available_items)\n\n        # Copier\
+      \ les \xE9l\xE9ments dans la sortie\n        output_items[0][:items_to_copy]\
+      \ = self.result[self.offset:self.offset + items_to_copy]\n\n        # Mettre\
+      \ \xE0 jour l'offset\n        self.offset += items_to_copy\n\n        # Si on\
+      \ atteint la fin du r\xE9sultat, remettre l'offset \xE0 z\xE9ro pour r\xE9p\xE9\
+      ter\n        if self.offset >= len(self.result):\n            self.offset =\
+      \ 0  # Boucle \xE0 nouveau\n\n        return items_to_copy"
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    var1: "Pr\xE9mbule"
+    var2: address_telec
+    var3: code_C
+  states:
+    _io_cache: "('Concat Source Block', 'concat_source_block', [('var1', 'None'),\
+      \ ('var2', 'None'), ('var3', 'None')], [], [('0', 'float', 1)], 'Bloc pour concat\xE9\
+      ner trois listes et les utiliser comme source de donn\xE9es.', ['var1', 'var2',\
+      \ 'var3'])"
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [40, 1560.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_1_0_1_0
+  id: epy_block
+  parameters:
+    _source_code: "import numpy as np\nfrom gnuradio import gr\n\nclass concat_source_block(gr.sync_block):\n\
+      \    \"\"\"Bloc pour concat\xE9ner trois listes et les utiliser comme source\
+      \ de donn\xE9es.\"\"\"\n    \n    def __init__(self, var1=None, var2=None, var3=None):\n\
+      \        gr.sync_block.__init__(self,\n            name=\"Concat Source Block\"\
+      ,\n            in_sig=None,  # Pas d'entr\xE9es\n            out_sig=[np.float32])\
+      \  # Sortie en float32\n        \n        # Initialisation des variables\n \
+      \       self.var1 = var1 if var1 is not None else []\n        self.var2 = var2\
+      \ if var2 is not None else []\n        self.var3 = var3 if var3 is not None\
+      \ else []\n        \n        # Concat\xE9nation initiale\n        self.result\
+      \ = np.array(self.var1 + self.var2 + self.var3, dtype=np.float32)\n        self.offset\
+      \ = 0  # Suivi de la position de lecture dans le r\xE9sultat\n\n    def set_var1(self,\
+      \ var1):\n        \"\"\"Met \xE0 jour var1 et recalcule le r\xE9sultat.\"\"\"\
+      \n        self.var1 = var1\n        self.result = np.array(self.var1 + self.var2\
+      \ + self.var3, dtype=np.float32)\n        self.offset = 0  # R\xE9initialiser\
+      \ l'offset\n\n    def set_var2(self, var2):\n        \"\"\"Met \xE0 jour var2\
+      \ et recalcule le r\xE9sultat.\"\"\"\n        self.var2 = var2\n        self.result\
+      \ = np.array(self.var1 + self.var2 + self.var3, dtype=np.float32)\n        self.offset\
+      \ = 0  # R\xE9initialiser l'offset\n\n    def set_var3(self, var3):\n      \
+      \  \"\"\"Met \xE0 jour var3 et recalcule le r\xE9sultat.\"\"\"\n        self.var3\
+      \ = var3\n        self.result = np.array(self.var1 + self.var2 + self.var3,\
+      \ dtype=np.float32)\n        self.offset = 0  # R\xE9initialiser l'offset\n\n\
+      \    def work(self, input_items, output_items):\n        \"\"\"Envoie les donn\xE9\
+      es concat\xE9n\xE9es comme sortie.\"\"\"\n        noutput_items = len(output_items[0])\n\
+      \n        # Calculer combien d'\xE9l\xE9ments nous pouvons copier \xE0 partir\
+      \ du r\xE9sultat\n        available_items = len(self.result) - self.offset\n\
+      \        items_to_copy = min(noutput_items, available_items)\n\n        # Copier\
+      \ les \xE9l\xE9ments dans la sortie\n        output_items[0][:items_to_copy]\
+      \ = self.result[self.offset:self.offset + items_to_copy]\n\n        # Mettre\
+      \ \xE0 jour l'offset\n        self.offset += items_to_copy\n\n        # Si on\
+      \ atteint la fin du r\xE9sultat, remettre l'offset \xE0 z\xE9ro pour r\xE9p\xE9\
+      ter\n        if self.offset >= len(self.result):\n            self.offset =\
+      \ 0  # Boucle \xE0 nouveau\n\n        return items_to_copy"
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    var1: "Pr\xE9mbule"
+    var2: address_telec
+    var3: code_A_et_B_et_C_et_D
+  states:
+    _io_cache: "('Concat Source Block', 'concat_source_block', [('var1', 'None'),\
+      \ ('var2', 'None'), ('var3', 'None')], [], [('0', 'float', 1)], 'Bloc pour concat\xE9\
+      ner trois listes et les utiliser comme source de donn\xE9es.', ['var1', 'var2',\
+      \ 'var3'])"
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [40, 1912.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_1_0_2
+  id: epy_block
+  parameters:
+    _source_code: "import numpy as np\nfrom gnuradio import gr\n\nclass concat_source_block(gr.sync_block):\n\
+      \    \"\"\"Bloc pour concat\xE9ner trois listes et les utiliser comme source\
+      \ de donn\xE9es.\"\"\"\n    \n    def __init__(self, var1=None, var2=None, var3=None):\n\
+      \        gr.sync_block.__init__(self,\n            name=\"Concat Source Block\"\
+      ,\n            in_sig=None,  # Pas d'entr\xE9es\n            out_sig=[np.float32])\
+      \  # Sortie en float32\n        \n        # Initialisation des variables\n \
+      \       self.var1 = var1 if var1 is not None else []\n        self.var2 = var2\
+      \ if var2 is not None else []\n        self.var3 = var3 if var3 is not None\
+      \ else []\n        \n        # Concat\xE9nation initiale\n        self.result\
+      \ = np.array(self.var1 + self.var2 + self.var3, dtype=np.float32)\n        self.offset\
+      \ = 0  # Suivi de la position de lecture dans le r\xE9sultat\n\n    def work(self,\
+      \ input_items, output_items):\n        \"\"\"Envoie les donn\xE9es concat\xE9\
+      n\xE9es comme sortie.\"\"\"\n        noutput_items = len(output_items[0])\n\n\
+      \        # Calculer combien d'\xE9l\xE9ments nous pouvons copier \xE0 partir\
+      \ du r\xE9sultat\n        available_items = len(self.result) - self.offset\n\
+      \        items_to_copy = min(noutput_items, available_items)\n\n        # Copier\
+      \ les \xE9l\xE9ments dans la sortie\n        output_items[0][:items_to_copy]\
+      \ = self.result[self.offset:self.offset + items_to_copy]\n\n        # Mettre\
+      \ \xE0 jour l'offset\n        self.offset += items_to_copy\n\n        # Si on\
+      \ atteint la fin du r\xE9sultat, remettre l'offset \xE0 z\xE9ro pour r\xE9p\xE9\
+      ter\n        if self.offset >= len(self.result):\n            self.offset =\
+      \ 0  # Boucle \xE0 nouveau\n\n        return items_to_copy"
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    var1: "Pr\xE9mbule"
+    var2: address_telec
+    var3: Code_A
+  states:
+    _io_cache: "('Concat Source Block', 'concat_source_block', [('var1', 'None'),\
+      \ ('var2', 'None'), ('var3', 'None')], [], [('0', 'float', 1)], 'Bloc pour concat\xE9\
+      ner trois listes et les utiliser comme source de donn\xE9es.', ['var1', 'var2',\
+      \ 'var3'])"
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [40, 1380.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_1_0_2_0
+  id: epy_block
+  parameters:
+    _source_code: "import numpy as np\nfrom gnuradio import gr\n\nclass concat_source_block(gr.sync_block):\n\
+      \    \"\"\"Bloc pour concat\xE9ner trois listes et les utiliser comme source\
+      \ de donn\xE9es.\"\"\"\n    \n    def __init__(self, var1=None, var2=None, var3=None):\n\
+      \        gr.sync_block.__init__(self,\n            name=\"Concat Source Block\"\
+      ,\n            in_sig=None,  # Pas d'entr\xE9es\n            out_sig=[np.float32])\
+      \  # Sortie en float32\n        \n        # Initialisation des variables\n \
+      \       self.var1 = var1 if var1 is not None else []\n        self.var2 = var2\
+      \ if var2 is not None else []\n        self.var3 = var3 if var3 is not None\
+      \ else []\n        \n        # Concat\xE9nation initiale\n        self.result\
+      \ = np.array(self.var1 + self.var2 + self.var3, dtype=np.float32)\n        self.offset\
+      \ = 0  # Suivi de la position de lecture dans le r\xE9sultat\n\n    def set_var1(self,\
+      \ var1):\n        \"\"\"Met \xE0 jour var1 et recalcule le r\xE9sultat.\"\"\"\
+      \n        self.var1 = var1\n        self.result = np.array(self.var1 + self.var2\
+      \ + self.var3, dtype=np.float32)\n        self.offset = 0  # R\xE9initialiser\
+      \ l'offset\n\n    def set_var2(self, var2):\n        \"\"\"Met \xE0 jour var2\
+      \ et recalcule le r\xE9sultat.\"\"\"\n        self.var2 = var2\n        self.result\
+      \ = np.array(self.var1 + self.var2 + self.var3, dtype=np.float32)\n        self.offset\
+      \ = 0  # R\xE9initialiser l'offset\n\n    def set_var3(self, var3):\n      \
+      \  \"\"\"Met \xE0 jour var3 et recalcule le r\xE9sultat.\"\"\"\n        self.var3\
+      \ = var3\n        self.result = np.array(self.var1 + self.var2 + self.var3,\
+      \ dtype=np.float32)\n        self.offset = 0  # R\xE9initialiser l'offset\n\n\
+      \    def work(self, input_items, output_items):\n        \"\"\"Envoie les donn\xE9\
+      es concat\xE9n\xE9es comme sortie.\"\"\"\n        noutput_items = len(output_items[0])\n\
+      \n        # Calculer combien d'\xE9l\xE9ments nous pouvons copier \xE0 partir\
+      \ du r\xE9sultat\n        available_items = len(self.result) - self.offset\n\
+      \        items_to_copy = min(noutput_items, available_items)\n\n        # Copier\
+      \ les \xE9l\xE9ments dans la sortie\n        output_items[0][:items_to_copy]\
+      \ = self.result[self.offset:self.offset + items_to_copy]\n\n        # Mettre\
+      \ \xE0 jour l'offset\n        self.offset += items_to_copy\n\n        # Si on\
+      \ atteint la fin du r\xE9sultat, remettre l'offset \xE0 z\xE9ro pour r\xE9p\xE9\
+      ter\n        if self.offset >= len(self.result):\n            self.offset =\
+      \ 0  # Boucle \xE0 nouveau\n\n        return items_to_copy"
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    var1: "Pr\xE9mbule"
+    var2: address_telec
+    var3: Code_A_et_B
+  states:
+    _io_cache: "('Concat Source Block', 'concat_source_block', [('var1', 'None'),\
+      \ ('var2', 'None'), ('var3', 'None')], [], [('0', 'float', 1)], 'Bloc pour concat\xE9\
+      ner trois listes et les utiliser comme source de donn\xE9es.', ['var1', 'var2',\
+      \ 'var3'])"
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [40, 1736.0]
+    rotation: 0
+    state: enabled
+- name: iio_pluto_sink_0
+  id: iio_pluto_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    attenuation1: '10.0'
+    bandwidth: '20000000'
+    buffer_size: '32768'
+    comment: ''
+    cyclic: 'False'
+    filter: ''
+    filter_source: '''Auto'''
+    fpass: '0'
+    frequency: Frequency
+    fstop: '0'
+    len_tag_key: ''
+    samplerate: samp_rate_envoye
+    type: fc32
+    uri: ip:192.168.2.1
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [488, 2084.0]
+    rotation: 180
+    state: enabled
+- name: iio_pluto_source_0_0
+  id: iio_pluto_source
+  parameters:
+    affinity: ''
+    alias: ''
+    bandwidth: '200000'
+    bbdc: 'True'
+    buffer_size: '32768'
+    comment: ''
+    filter: ''
+    filter_source: '''Auto'''
+    fpass: '0'
+    frequency: Frequency
+    fstop: '0'
+    gain1: '''slow_attack'''
+    len_tag_key: packet_len
+    manual_gain1: '64'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    quadrature: 'True'
+    rfdc: 'True'
+    samplerate: '2000000'
+    type: fc32
+    uri: ip:192.168.2.1
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [32, 560.0]
+    rotation: 0
+    state: enabled
+- name: low_pass_filter_0
+  id: low_pass_filter
+  parameters:
+    affinity: ''
+    alias: ''
+    beta: '6.76'
+    comment: ''
+    cutoff_freq: '500'
+    decim: '1'
+    gain: '1'
+    interp: '1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samp_rate: '100000'
+    type: fir_filter_fff
+    width: '100'
+    win: window.WIN_HAMMING
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [688, 592.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_freq_sink_x_0
+  id: qtgui_freq_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    average: '1.0'
+    axislabels: 'True'
+    bw: samp_rate_recep
+    color1: '"blue"'
+    color10: '"dark blue"'
+    color2: '"red"'
+    color3: '"green"'
+    color4: '"black"'
+    color5: '"cyan"'
+    color6: '"magenta"'
+    color7: '"yellow"'
+    color8: '"dark red"'
+    color9: '"dark green"'
+    comment: ''
+    ctrlpanel: 'False'
+    fc: '0'
+    fftsize: '1024'
+    freqhalf: 'True'
+    grid: 'False'
+    gui_hint: 'Tab_aff_recep_1@0 : 0,0,1,1'
+    label: Relative Gain
+    label1: ''
+    label10: ''''''
+    label2: ''''''
+    label3: ''''''
+    label4: ''''''
+    label5: ''''''
+    label6: ''''''
+    label7: ''''''
+    label8: ''''''
+    label9: ''''''
+    legend: 'True'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: '"Avant Filtre"'
+    nconnections: '1'
+    norm_window: 'False'
+    showports: 'False'
+    tr_chan: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_tag: '""'
+    type: float
+    units: dB
+    update_time: '0.10'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    wintype: window.WIN_BLACKMAN_hARRIS
+    ymax: '10'
+    ymin: '-140'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [680, 764.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_freq_sink_x_0_0
+  id: qtgui_freq_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    average: '1.0'
+    axislabels: 'True'
+    bw: samp_rate_recep
+    color1: '"blue"'
+    color10: '"dark blue"'
+    color2: '"red"'
+    color3: '"green"'
+    color4: '"black"'
+    color5: '"cyan"'
+    color6: '"magenta"'
+    color7: '"yellow"'
+    color8: '"dark red"'
+    color9: '"dark green"'
+    comment: ''
+    ctrlpanel: 'False'
+    fc: '0'
+    fftsize: '1024'
+    freqhalf: 'True'
+    grid: 'False'
+    gui_hint: 'Tab_aff_recep_1@0 : 0,1,1,1'
+    label: Relative Gain
+    label1: ''
+    label10: ''''''
+    label2: ''''''
+    label3: ''''''
+    label4: ''''''
+    label5: ''''''
+    label6: ''''''
+    label7: ''''''
+    label8: ''''''
+    label9: ''''''
+    legend: 'True'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: '"Apres filtre"'
+    nconnections: '1'
+    norm_window: 'False'
+    showports: 'False'
+    tr_chan: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_tag: '""'
+    type: float
+    units: dB
+    update_time: '0.10'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    wintype: window.WIN_BLACKMAN_hARRIS
+    ymax: '10'
+    ymin: '-140'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [904, 756.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_graphicitem_0
+  id: qtgui_graphicitem
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    file: "C:\\Users\\basti\\OneDrive\\Bureau\\IUT\\Semestre 3\\SAE 31 - Etude et\
+      \ mise en oeuvre d\u2019un syst\xE8me de transmission\\Capture d\u2019\xE9cran\
+      \ 2024-10-25 151529.png"
+    fixedsize: 'True'
+    gui_hint: 'Tab_general@0: 0,1,1,1'
+    height: '640'
+    scaleImage: 'False'
+    width: '640'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [864, 304.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_graphicitem_0_0
+  id: qtgui_graphicitem
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    file: "C:\\Users\\basti\\OneDrive\\Bureau\\IUT\\Semestre 3\\SAE 31 - Etude et\
+      \ mise en oeuvre d\u2019un syst\xE8me de transmission\\Capture d\u2019\xE9cran\
+      \ 2024-10-25 152410.png"
+    fixedsize: 'True'
+    gui_hint: Tab_general@0:1,0,1,1
+    height: '-1'
+    scaleImage: 'False'
+    width: '-1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [864, 376.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_graphicitem_0_0_0
+  id: qtgui_graphicitem
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    file: "C:\\Users\\basti\\OneDrive\\Bureau\\IUT\\Semestre 3\\SAE 31 - Etude et\
+      \ mise en oeuvre d\u2019un syst\xE8me de transmission\\Capture d\u2019\xE9cran\
+      \ 2024-10-25 152410.png"
+    fixedsize: 'True'
+    gui_hint: 'Tab_general@0: 0,0,1,1'
+    height: '750'
+    scaleImage: 'False'
+    width: '750'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [864, 160.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_graphicitem_0_0_1
+  id: qtgui_graphicitem
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    file: "C:\\Users\\basti\\OneDrive\\Bureau\\IUT\\Semestre 3\\SAE 31 - Etude et\
+      \ mise en oeuvre d\u2019un syst\xE8me de transmission\\Capture d\u2019\xE9cran\
+      \ 2024-10-25 152410.png"
+    fixedsize: 'True'
+    gui_hint: 'Tab_general@0: 0,2,1,1'
+    height: '750'
+    scaleImage: 'False'
+    width: '750'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [864, 232.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_graphicitem_0_0_1_0
+  id: qtgui_graphicitem
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    file: "C:\\Users\\basti\\OneDrive\\Bureau\\IUT\\Semestre 3\\SAE 31 - Etude et\
+      \ mise en oeuvre d\u2019un syst\xE8me de transmission\\Capture d\u2019\xE9cran\
+      \ 2024-10-25 152410.png"
+    fixedsize: 'True'
+    gui_hint: Tab_general@1 :3,0,4,1
+    height: '750'
+    scaleImage: 'False'
+    width: '750'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [864, 448.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_sink_x_0
+  id: qtgui_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    bw: samp_rate_recep
+    comment: ''
+    fc: '0'
+    fftsize: '1024'
+    gui_hint: 'Tab_recep@0 '
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: '"Apres demodulation"'
+    plotconst: 'True'
+    plotfreq: 'True'
+    plottime: 'True'
+    plotwaterfall: 'True'
+    rate: '10'
+    showports: 'False'
+    showrf: 'False'
+    type: float
+    wintype: window.WIN_BLACKMAN_hARRIS
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [688, 888.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_sink_x_0_0
+  id: qtgui_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    bw: samp_rate_envoye
+    comment: ''
+    fc: '0'
+    fftsize: '1024'
+    gui_hint: 'Tab_aff_envoye@0  : 0,0,1,1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: '"Binaire"'
+    plotconst: 'True'
+    plotfreq: 'True'
+    plottime: 'True'
+    plotwaterfall: 'False'
+    rate: '10'
+    showports: 'False'
+    showrf: 'False'
+    type: float
+    wintype: window.WIN_BLACKMAN_hARRIS
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1088, 1688.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_sink_x_0_0_0
+  id: qtgui_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    bw: samp_rate_recep
+    comment: ''
+    fc: '0'
+    fftsize: '1024'
+    gui_hint: 'Tab_recep@0 '
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: '"Binaire"'
+    plotconst: 'True'
+    plotfreq: 'True'
+    plottime: 'True'
+    plotwaterfall: 'True'
+    rate: '10'
+    showports: 'False'
+    showrf: 'False'
+    type: float
+    wintype: window.WIN_BLACKMAN_hARRIS
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1120, 880.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_sink_x_0_1
+  id: qtgui_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    bw: samp_rate_envoye
+    comment: ''
+    fc: '0'
+    fftsize: '1024'
+    gui_hint: 'Tab_aff_envoye@0 : 0,1,1,1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: '"Singal envoyer"'
+    plotconst: 'True'
+    plotfreq: 'True'
+    plottime: 'True'
+    plotwaterfall: 'False'
+    rate: '10'
+    showports: 'False'
+    showrf: 'False'
+    type: complex
+    wintype: window.WIN_BLACKMAN_hARRIS
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [792, 2040.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_sink_x_0_1_0
+  id: qtgui_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    bw: samp_rate_recep
+    comment: ''
+    fc: '0'
+    fftsize: '1024'
+    gui_hint: 'Tab_recep@0 '
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: "\"Singal re\xE7u\""
+    plotconst: 'True'
+    plotfreq: 'True'
+    plottime: 'True'
+    plotwaterfall: 'True'
+    rate: '10'
+    showports: 'False'
+    showrf: 'False'
+    type: complex
+    wintype: window.WIN_BLACKMAN_hARRIS
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [472, 888.0]
+    rotation: 0
+    state: enabled
+
+connections:
+- [analog_sig_source_x_0, '0', blocks_multiply_xx_0, '1']
+- [blocks_add_xx_0, '0', blocks_multiply_xx_0, '0']
+- [blocks_add_xx_0, '0', qtgui_sink_x_0_0, '0']
+- [blocks_complex_to_mag_squared_0, '0', low_pass_filter_0, '0']
+- [blocks_complex_to_mag_squared_0, '0', qtgui_freq_sink_x_0, '0']
+- [blocks_complex_to_mag_squared_0, '0', qtgui_sink_x_0, '0']
+- [blocks_float_to_complex_0, '0', iio_pluto_sink_0, '0']
+- [blocks_float_to_complex_0, '0', qtgui_sink_x_0_1, '0']
+- [blocks_multiply_const_vxx_1, '0', blocks_add_xx_0, '0']
+- [blocks_multiply_const_vxx_1_0, '0', blocks_add_xx_0, '3']
+- [blocks_multiply_const_vxx_1_0_0, '0', blocks_add_xx_0, '7']
+- [blocks_multiply_const_vxx_1_1, '0', blocks_add_xx_0, '1']
+- [blocks_multiply_const_vxx_1_1_0, '0', blocks_add_xx_0, '5']
+- [blocks_multiply_const_vxx_1_2, '0', blocks_add_xx_0, '2']
+- [blocks_multiply_const_vxx_1_2_0, '0', blocks_add_xx_0, '6']
+- [blocks_multiply_const_vxx_1_3, '0', blocks_complex_to_mag_squared_0, '0']
+- [blocks_multiply_const_vxx_1_3, '0', qtgui_sink_x_0_1_0, '0']
+- [blocks_multiply_const_vxx_1_4, '0', blocks_multiply_const_vxx_1, '0']
+- [blocks_multiply_const_vxx_1_4_0, '0', blocks_multiply_const_vxx_1_0, '0']
+- [blocks_multiply_const_vxx_1_4_0_0, '0', blocks_multiply_const_vxx_1_0_0, '0']
+- [blocks_multiply_const_vxx_1_4_1, '0', blocks_multiply_const_vxx_1_1, '0']
+- [blocks_multiply_const_vxx_1_4_1_0, '0', blocks_multiply_const_vxx_1_1_0, '0']
+- [blocks_multiply_const_vxx_1_4_2, '0', blocks_multiply_const_vxx_1_2, '0']
+- [blocks_multiply_const_vxx_1_4_2_0, '0', blocks_multiply_const_vxx_1_2_0, '0']
+- [blocks_multiply_const_vxx_1_4_3, '0', blocks_multiply_const_vxx_1_5, '0']
+- [blocks_multiply_const_vxx_1_5, '0', blocks_add_xx_0, '4']
+- [blocks_multiply_xx_0, '0', blocks_float_to_complex_0, '0']
+- [blocks_repeat_0, '0', blocks_multiply_const_vxx_1_4, '0']
+- [blocks_repeat_0_0, '0', blocks_multiply_const_vxx_1_4_1, '0']
+- [blocks_repeat_0_0_0, '0', blocks_multiply_const_vxx_1_4_1_0, '0']
+- [blocks_repeat_0_1, '0', blocks_multiply_const_vxx_1_4_2, '0']
+- [blocks_repeat_0_1_0, '0', blocks_multiply_const_vxx_1_4_2_0, '0']
+- [blocks_repeat_0_2, '0', blocks_multiply_const_vxx_1_4_0, '0']
+- [blocks_repeat_0_2_0, '0', blocks_multiply_const_vxx_1_4_0_0, '0']
+- [blocks_repeat_0_3, '0', blocks_multiply_const_vxx_1_4_3, '0']
+- [blocks_threshold_ff_0, '0', blocks_file_sink_0, '0']
+- [blocks_threshold_ff_0, '0', qtgui_sink_x_0_0_0, '0']
+- [blocks_vector_source_x_0, '0', blocks_repeat_0_2_0, '0']
+- [epy_block_1_0, '0', blocks_repeat_0_2, '0']
+- [epy_block_1_0_0, '0', blocks_repeat_0_0, '0']
+- [epy_block_1_0_0_0, '0', blocks_repeat_0_0_0, '0']
+- [epy_block_1_0_1, '0', blocks_repeat_0_1, '0']
+- [epy_block_1_0_1_0, '0', blocks_repeat_0_1_0, '0']
+- [epy_block_1_0_2, '0', blocks_repeat_0, '0']
+- [epy_block_1_0_2_0, '0', blocks_repeat_0_3, '0']
+- [iio_pluto_source_0_0, '0', blocks_multiply_const_vxx_1_3, '0']
+- [low_pass_filter_0, '0', blocks_threshold_ff_0, '0']
+- [low_pass_filter_0, '0', qtgui_freq_sink_x_0_0, '0']
+
+metadata:
+  file_format: 1
+  grc_version: 3.10.9.2
